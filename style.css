@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header.top-bar {
+  background: #3a4d2c;
+  color: #fff;
+}
+
+.announcement {
+  background: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.call-to-action {
+  text-align: right;
+}
+
+.reserve {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero {
+  background: #d0e6e6;
+  padding: 2em;
+  text-align: center;
+}
+
+.youth-groups {
+  background: #6c5430;
+  color: #fff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.coupon {
+  margin-top: 0.5em;
+  background: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 0.4em 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: #1a8a9a;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.gallery {
+  background: #f1b24a;
+  padding: 2em;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.promos {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  background: #fef9ef;
+  text-align: center;
+}
+
+.promo img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5px;
+}
+
+.promo p {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
