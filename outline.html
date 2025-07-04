@@ -3,122 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Fishing Lodge</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f0f0f0;
-      padding: 10px 20px;
-      position: relative;
-    }
-
-    .header-left,
-    .header-right {
-      display: flex;
-      gap: 15px;
-    }
-
-    .header-center {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    section {
-      height: 100vh;
-      padding: 60px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 40px;
-    }
-
-    /* Special layout for the final (shorter) section */
-    section.short-section {
-      height: 60vh;
-      padding: 20px;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    section:nth-of-type(odd) {
-      background-color: #f9f9f9;
-    }
-
-    section:nth-of-type(even) {
-      background-color: #ffffff;
-    }
-
-    .call-to-action {
-      margin-bottom: 30px;
-    }
-
-    .text-stack p {
-      margin: 10px 0;
-      font-size: 18px;
-    }
-
-    .amenities {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      width: 100%;
-      max-width: 1000px;
-      text-align: center;
-    }
-
-    .amenities div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .button-group {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    footer {
-      background-color: #f0f0f0;
-      padding: 20px;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .amenities {
-        grid-template-columns: 1fr;
-      }
-
-      .header-center {
-        display: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Sticky Reserve Now Banner -->
+  <div class="reserve-banner">
+    <button>Reserve Now</button>
+  </div>
+
+  <!-- Header (Top Banner) -->
   <header>
     <div class="header-left">
       <button>Logo</button>
@@ -133,7 +27,8 @@
     </div>
   </header>
 
-  <!-- Page 1 -->
+  <!-- Page 1 with background image -->
+<div class="hero-section">
   <section>
     <div class="call-to-action">
       <button>Book A Night</button>
@@ -144,6 +39,8 @@
       <p>"Text"</p>
     </div>
   </section>
+</div>
+
 
   <!-- Page 2 -->
   <section>
@@ -151,24 +48,24 @@
     <div class="amenities">
       <div>
         <p>"Text"</p>
-        <img class="placeholder" alt="Picture 1" style="width: 100%; height: 200px; background-color: #ccc;">
+        <img class="placeholder" alt="Picture 1">
       </div>
       <div>
         <p>"Text"</p>
-        <img class="placeholder" alt="Picture 2" style="width: 100%; height: 200px; background-color: #ccc;">
+        <img class="placeholder" alt="Picture 2">
       </div>
       <div>
         <p>"Text"</p>
-        <img class="placeholder" alt="Picture 3" style="width: 100%; height: 200px; background-color: #ccc;">
+        <img class="placeholder" alt="Picture 3">
       </div>
       <div>
         <p>"Text"</p>
-        <img class="placeholder" alt="Picture 4" style="width: 100%; height: 200px; background-color: #ccc;">
+        <img class="placeholder" alt="Picture 4">
       </div>
     </div>
   </section>
 
-  <!-- Page 3 (shorter height and tighter spacing) -->
+  <!-- Page 3 (Shorter) -->
   <section class="short-section">
     <div class="button-group">
       <button>Events</button>
