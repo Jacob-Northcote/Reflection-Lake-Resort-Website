@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
 }
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Ropert Serif', serif;
   scroll-behavior: smooth;
   background-color: #fdfbed;
   color: #374832;
@@ -18,7 +19,8 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 60px;
+  margin-bottom: 0;
+  margin-top: -150px; /* Restore overlay if needed */
 }
 
 .hero-section section {
@@ -41,6 +43,10 @@ html, body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 body {
   padding-top: 56px;
@@ -63,8 +69,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #374832;
-  padding: 25px 20px;
+  /* background-color: #374832; */
+  background-image: url('assets/header.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
   position: relative;
   color: #fdfbed;
 }
@@ -92,8 +102,10 @@ button {
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
-button:hover {
-  background-color: #573223;
+button:hover,
+#reserveBtn:hover, #fishingBtn:hover, #bookNightBtn:hover, #bookNowRightBtn:hover, #amenitiesBtn:hover, .button-group button:hover {
+  background-color: #fff;
+  color: #573223;
 }
 section {
   height: 100vh;
@@ -106,10 +118,11 @@ section {
   background-color: #fdfbed;
 }
 section.short-section {
-  height: 60vh;
-  padding: 20px 0 10px 0;
-  justify-content: flex-end;
-  margin-bottom: 0;
+  height: auto;
+  padding: 10px 0 0 0;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 .call-to-action {
   margin-bottom: 30px;
@@ -136,6 +149,22 @@ section.short-section {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
+}
+#reserveBtn, #fishingBtn, #bookNightBtn, #bookNowRightBtn, #amenitiesBtn, .button-group button {
+  background-color: #573223;
+  color: #fdfbed;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Ropert Serif', serif;
+}
+#reserveBtn:hover, #fishingBtn:hover, #bookNightBtn:hover, #bookNowRightBtn:hover, #amenitiesBtn:hover, .button-group button:hover {
+  background-color: #fff;
+  color: #573223;
 }
 img.placeholder {
   width: 100%;
@@ -178,7 +207,7 @@ section + section {
   background: transparent;
   border: none;
   padding: 0;
-  margin: 210px 0 0 0;
+  margin: 167px 0 0 0;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -194,4 +223,50 @@ section + section {
   object-fit: contain;
   display: block;
   pointer-events: none;
+}
+
+.secondary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('assets/header.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  position: relative;
+  color: #fdfbed;
+  margin-top: -60px; /* Overlap hero-section background */
+  margin-bottom: 20px;
+}
+
+#bookNowRightBtn {
+  /* Revert to shared brown button style */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #573223;
+  color: #fdfbed;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Ropert Serif', serif;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.button:hover {
+  background-color: #fff;
+  color: #573223;
+}
+
+#phoneNumber {
+  margin-right: 0;
+}
+#reserveBtn {
+  margin-left: 0;
+  margin-right: 0;
 } 
