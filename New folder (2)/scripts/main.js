@@ -33,6 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // TODO: Tour logic
     alert('Tour clicked!');
   });
+  document.getElementById('logoImageBtn').addEventListener('click', () => {
+    window.location.href = 'index.html';
+  });
+  document.getElementById('fishingBtn').addEventListener('click', () => {
+    window.location.href = 'fishing.html';
+  });
 });
 
 // Placeholder for backend API calls

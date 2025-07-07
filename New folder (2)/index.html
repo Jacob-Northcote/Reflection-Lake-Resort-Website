@@ -8,12 +8,16 @@
 <body>
   <!-- Sticky Reserve Now Banner -->
   <div class="reserve-banner">
+    <span id="phoneNumber">(123)-456-7890</span>
     <button id="reserveBtn">Reserve Now</button>
+    <a href="fishing.html" id="fishingBtn" class="button">Fishing</a>
+    <button id="amenitiesBtn" onclick="document.getElementById('amenitiesSection').scrollIntoView({ behavior: 'smooth' });">Amenities</button>
   </div>
+
   <!-- Header (Top Banner) -->
   <header>
     <div class="header-left">
-      <button id="fishingBtn">Fishing</button>
+      <!-- Fishing button removed -->
     </div>
     <div class="header-center">
       <button id="logoImageBtn">
@@ -21,25 +25,34 @@
       </button>
     </div>
     <div class="header-right">
-      <span id="phoneNumber">"Phone#"</span>
-      <button id="bookNowRightBtn">Book Now</button>
+      <!-- Book Now button removed -->
     </div>
   </header>
+
   <!-- Page 1 with background image -->
   <div class="hero-section">
     <section>
       <div class="call-to-action">
-        <button id="bookNightBtn">Book A Night</button>
-      </div>
-      <div class="text-stack">
-        <p>"Text"</p>
-        <p>"Text"</p>
-        <p>"Text"</p>
+        <button id="bookNowRightBtn">Book Now</button>
       </div>
     </section>
   </div>
+
+  <!-- Secondary Header (Image Box) -->
+  <header class="secondary-header">
+    <div class="header-left">
+      <!-- Fishing button removed -->
+    </div>
+    <div class="header-center">
+      <!-- Logo image and button removed -->
+    </div>
+    <div class="header-right">
+      <!-- Book Now button removed -->
+    </div>
+  </header>
+
   <!-- Page 2 -->
-  <section>
+  <section id="amenitiesSection">
     <h2>"Amenities"</h2>
     <div class="amenities">
       <div>
