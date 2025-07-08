@@ -5,10 +5,10 @@
 // Example: Add event listeners for buttons
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('reserveBtn').addEventListener('click', () => {
-    // TODO: Open reservation modal or redirect
-    alert('Reserve Now clicked! (Future: connect to backend)');
-  });
+  // document.getElementById('reserveBtn').addEventListener('click', () => {
+  //   // TODO: Open reservation modal or redirect
+  //   alert('Reserve Now clicked! (Future: connect to backend)');
+  // });
   document.getElementById('bookNowCenterBtn').addEventListener('click', () => {
     // TODO: Booking logic
     alert('Book Now (center) clicked!');
