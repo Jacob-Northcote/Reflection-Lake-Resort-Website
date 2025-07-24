@@ -1,6 +1,7 @@
 Reflection Lake RV Resort Website
 
 Welcome to the official repository for the Reflection Lake RV Resort website! This project is a modern, full-stack web application designed to showcase the resort’s amenities, streamline online reservations, and provide an engaging, mobile-friendly experience for visitors.
+<img width="1920" height="953" alt="Resort" src="https://github.com/user-attachments/assets/b989d4e2-3b6f-4c97-a369-efb685a69b6d" />
 
 🔧 Project Overview
 This repository contains both the frontend and backend code for the Reflection Lake RV Resort website. The site features a visually appealing design, easy navigation, and direct integration with the resort’s booking system. It is built for scalability and future enhancements, including additional pages and backend API endpoints.
